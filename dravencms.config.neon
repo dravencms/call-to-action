@@ -1,0 +1,7 @@
+extensions:
+    dravencms.callToAction: Dravencms\CallToAction\DI\CallToActionExtension
+
+
+nettrine.orm.annotations:
+    mapping:
+        Dravencms\Model\CallToAction: %appDir%/../vendor/dravencms/call-to-action/src/Dravencms/Model/CallToAction/Entities

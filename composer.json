@@ -1,0 +1,36 @@
+{
+  "name": "dravencms/call-to-action",
+  "type": "dravencms-package",
+  "description": "Call to action module for dravencms",
+  "keywords": [
+    "dravencms",
+    "call-to-action"
+  ],
+  "license": [
+    "LGPL-3.0"
+  ],
+  "authors": [
+    {
+      "name": "Adam Schubert"
+    }
+  ],
+  "require": {    
+    "dravencms/admin": ">=2.0"
+  },
+  "suggest": {
+    "dravencms/structure": "Allows call to action components to be used in cms"
+  },
+  "require-dev": {
+    "nette/tester": "@dev"
+  },
+  "autoload": {
+    "psr-0": {
+      "Dravencms\\": "src/"
+    }
+  },
+  "extra": {
+    "dravencms": {
+      "configuration": "dravencms.config.neon"
+    }
+  }
+}

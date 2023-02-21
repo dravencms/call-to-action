@@ -1,0 +1,18 @@
+<section class="small-section bg-dark" data-background="{if $buttonTranslation->getButton()->getPicture()}{img $buttonTranslation->getButton()->getPicture()->getFile()}{/if}"><div class="container relative">
+
+        <div class="align-center">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="newsletter-label font-alt">{$buttonTranslation->getTitle()}</div>
+                    <div class="mb-20">
+                        {var $button = $buttonTranslation->getButton()}
+                        {var $menu = $button->getMenu()}
+                        <a {if $menu}href="{plink $menu->getPresenter().':'.$menu->getAction()}" {else}href="{$button->getUrl()}"{/if} {if $button->isOpenInNewTab()}target="_blank"{/if} class="btn btn-mod btn-medium btn-round mb-xs-10">{$buttonTranslation->getButtonTitle()}</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
