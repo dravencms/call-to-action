@@ -2,7 +2,6 @@
 
 namespace Dravencms\CallToAction\DI;
 
-use Contributte\Translation\DI\TranslationProviderInterface;
 use Nette\DI\CompilerExtension;
 use Dravencms\Structure\DI\StructureExtension;
 use Dravencms\CallToAction\CallToAction;
@@ -11,13 +10,8 @@ use Dravencms\CallToAction\CallToAction;
  * Class CallToActionExtension
  * @package Dravencms\CallToAction\DI
  */
-class CallToActionExtension extends CompilerExtension implements TranslationProviderInterface
+class CallToActionExtension extends CompilerExtension
 {
-    public function getTranslationResources(): array
-    {
-        return [__DIR__.'/../lang'];
-    }
-
     public function loadConfiguration(): void
     {
         $builder = $this->getContainerBuilder();
