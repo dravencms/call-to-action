@@ -5,7 +5,7 @@ namespace Dravencms\Model\CallToAction\Repository;
 
 use Dravencms\Model\Locale\Entities\ILocale;
 use Dravencms\Database\EntityManager;
-use NemeDravencmsc\Model\CallToAction\Entities\Button;
+use Dravencms\Model\CallToAction\Entities\Button;
 use Dravencms\Model\CallToAction\Entities\ButtonTranslation;
 
 class ButtonTranslationRepository
