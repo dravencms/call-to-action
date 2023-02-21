@@ -162,7 +162,7 @@ class Button
     }
 
     /**
-     * @return string
+     * @return null|string
      */
     public function getUrl(): ?string
     {
